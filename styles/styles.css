@@ -1,0 +1,396 @@
+/* Basic page setup */
+header, nav, main, footer {
+    display: block;
+}
+
+body {
+    background-color: #18241C;
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+}
+
+
+/* Main website container */
+#wrapper {
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+    background-color: #F1E5C8;
+    color: #33251D;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+
+/* Header and website title */
+header {
+    background-color: #33251D;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 4px solid #C9A65A;
+}
+
+h1 {
+    color: #C9A65A;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/* Short phrase underneath the website title */
+.tagline {
+    color: #F1E5C8;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+/* Navigation styling */
+nav {
+    background-color: #26352B;
+    text-align: center;
+    padding: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 12px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:link {
+    color: #F1E5C8;
+}
+
+nav a:visited {
+    color: #D8C9A3;
+}
+
+nav a:hover {
+    color: #E1C77A;
+}
+
+
+/* Main content area */
+main {
+    background-color: #F5EEDC;
+    padding: 25px 40px;
+    min-height: 300px;
+}
+
+
+/* Heading styles */
+h2 {
+    color: #74572B;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* Paragraph styling */
+p {
+    line-height: 1.6;
+}
+
+
+/* List styling */
+main ul {
+    line-height: 1.8;
+    padding-left: 35px;
+}
+
+main li {
+    margin-bottom: 6px;
+}
+
+
+/* Main page image */
+main img {
+    display: block;
+    margin: 20px auto;
+    padding: 4px;
+    border: 4px solid #C9A65A;
+    background-color: #FFFFFF;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #33251D;
+    color: #F1E5C8;
+    padding: 20px;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+
+footer a {
+    color: #C9A65A;
+}
+
+/* Smaller headings used on room pages */
+h3 {
+    color: #71866A;
+    font-family: Georgia, "Times New Roman", serif;
+    border-bottom: 1px solid #C9A65A;
+    padding-bottom: 5px;
+}
+
+/* Website logo */
+.logo {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 0 auto 10px auto;
+}
+
+/* Large images used throughout the website */
+.feature-image {
+    display: block;
+    width: 650px;
+    max-width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 4px;
+    border: 4px solid #C9A65A;
+    background-color: #FFFFFF;
+}
+
+/* Images used on the Weekend Adventures page */
+.event-image {
+    display: block;
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 4px;
+    border: 4px solid #C9A65A;
+    background-color: #FFFFFF;
+}
+
+/* Navigation link styling */
+nav a {
+    color: #F1E5C8;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+
+/* Unvisited navigation links */
+nav a:link {
+    color: #F1E5C8;
+}
+
+/* Previously visited navigation links */
+nav a:visited {
+    color: #D8C9A3;
+}
+
+/* Changes when the mouse is placed over a link */
+nav a:hover {
+    color: #33251D;
+    background-color: #E1C77A;
+}
+
+/* Changes when a link is selected with the keyboard */
+nav a:focus {
+    color: #33251D;
+    background-color: #E1C77A;
+    outline: 2px solid #F1E5C8;
+}
+
+/* Changes while a link is being clicked */
+nav a:active {
+    color: #FFFFFF;
+    background-color: #71866A;
+}
+
+/* Reservation form layout */
+.form-columns {
+    display: flex;
+    gap: 30px;
+}
+
+.form-section {
+    flex: 1;
+}
+
+/* Form labels */
+.reservation-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+/* Form fields */
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="number"],
+.reservation-form input[type="date"],
+.reservation-form select,
+.reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #71866A;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Additional services */
+fieldset {
+    margin-top: 25px;
+    padding: 20px;
+    border: 2px solid #C9A65A;
+}
+
+legend {
+    color: #74572B;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.service-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-options label {
+    width: 50%;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+/* Reservation submit button */
+.reservation-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #71866A;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1em;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.reservation-form button:hover {
+    background-color: #33251D;
+    cursor: pointer;
+}
+
+/* Room rate table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    color: #74572B;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+th {
+    background-color: #26352B;
+    color: #F1E5C8;
+}
+
+th,
+td {
+    border: 1px solid #71866A;
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #E8DFC8;
+}
+
+/* Mobile and tablet layout */
+@media screen and (max-width: 700px) {
+
+    #wrapper {
+        width: 100%;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+
+    /* Stack navigation links vertically */
+    nav {
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 12px;
+        border-bottom: 1px solid #71866A;
+    }
+
+
+    /* Reduce content spacing */
+    main {
+        padding: 20px;
+    }
+
+
+    /* Stack reservation columns */
+    .form-columns {
+        flex-direction: column;
+        gap: 0;
+    }
+
+
+    /* Stack additional service options */
+    .service-options label {
+        width: 100%;
+    }
+
+
+    /* Keep images inside small screens */
+    .feature-image,
+    .event-image,
+    .room-image {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* Slightly reduce table text */
+    table {
+        font-size: 0.9em;
+    }
+
+}
